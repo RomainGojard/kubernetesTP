@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Todo List App</h1>
+    <nav>
+      <a href="{% url 'login' %}">Login</a>
+      <a href="{% url 'register' %}">Register</a>
+    </nav>
+  </header>
+  <main>
+    <section id="todo-form">
+      <h2>Add a new task</h2>
+      <button id="add-task-btn">Add a new task</button>
+      <div id="task-modal" style="display: none;">
+        <form id="task-form" method="post" action="{% url 'add_task' %}">
+          {% csrf_token %}
+          <label for="task-name">Nom de la tâche:</label>
+          <input type="text" id="task-name" name="task-name" placeholder="Nom de la tâche..." required>
+          <br>
+          
+          <label for="task-desc">Ajouter une description:</label>
+          <textarea id="task-desc" name="task-desc" placeholder="Ajouter une description..."></textarea>
+          <br>
+          
+          <label for="task-assign">Assigner à:</label>
+          <input type="text" id="task-assign" name="task-assign" placeholder="Assigner à..." list="assign-list">
+          <datalist id="assign-list">
+            {% for user in users %}
+              <option value="{{ user.username }} ({{ user.email }})">
+            {% endfor %}
+          </datalist>
+          <br>
+          
+          <label for="task-priority">Priorité:</label>
+          <div id="task-priority">
+            <input type="radio" id="priority-low" name="priority" value="low">
+            <label for="priority-low" style="color: green;">●</label>
+            <input type="radio" id="priority-medium" name="priority" value="medium">
+            <label for="priority-medium" style="color: orange;">●</label>
+            <input type="radio" id="priority-high" name="priority" value="high">
+            <label for="priority-high" style="color: red;">●</label>
+          </div>
+          <br>
+          
+          <button type="submit">Ajouter</button>
+          <button type="button" id="close-task-modal">X</button>
+        </form>
+      </div>
+      <script>
+        document.getElementById('add-task-btn').addEventListener('click', function() {
+          document.getElementById('task-modal').style.display = 'block';
+        });
+        document.getElementById('close-task-modal').addEventListener('click', function() {
+          document.getElementById('task-modal').style.display = 'none';
+        });
+      </script>
+    </section>
+    <section id="todo-list">
+      <h2>Your Tasks</h2>
+      <ul>
+        {% for task in tasks %}
+            <li>{{ task.title }} - {{ task.description }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Todo List App</p>
+    <p>Alexis BARREYRE, Romain GOJARD - ESGI - M2 IABD</p>
+  </footer>
+</body>
+</html>

@@ -1,19 +1,17 @@
 # SDLC pour le projet Django et Kubernetes
 
 ## 1. Planification
-- Définir la portée et les objectifs du projet.
-- Identifier les parties prenantes et recueillir les exigences.
-- Créer un plan de projet et un calendrier.
+- Définir les features et les besoin auquel doit répondre le projet.
+- Identifier les exigences des différentes features.
+- Créer un plan de projet.
 
 ## 2. Analyse
-- Analyser les exigences et créer des spécifications détaillées.
-- Identifier la faisabilité technique et opérationnelle.
-- Planifier les ressources, le budget et la gestion des risques.
+- Reprendre les exigences et créer des spécifications détaillées.
+- Identifier la faisabilité technique et les risques potentiels.
 
 ## 3. Conception
-- Concevoir l'architecture du système et le schéma de la base de données.
-- Créer des wireframes et des maquettes pour l'interface utilisateur.
-- Planifier la sécurité, l'évolutivité et les performances.
+- Concevoir l'architecture de l'appli et le schéma de la base de données.
+- Créer des maquettes (très simplifiées) pour l'interface utilisateur.
 
 ## 4. Développement
 - Configurer le projet Django et créer la structure de l'application.

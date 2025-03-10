@@ -1,47 +1,47 @@
-# SDLC for Django and Kubernetes Project
+# SDLC pour le projet Django et Kubernetes
 
-## 1. Planning
-- Define project scope and objectives.
-- Identify stakeholders and gather requirements.
-- Create a project plan and timeline.
+## 1. Planification
+- Définir la portée et les objectifs du projet.
+- Identifier les parties prenantes et recueillir les exigences.
+- Créer un plan de projet et un calendrier.
 
-## 2. Analysis
-- Analyze requirements and create detailed specifications.
-- Identify technical and operational feasibility.
-- Plan for resources, budget, and risk management.
+## 2. Analyse
+- Analyser les exigences et créer des spécifications détaillées.
+- Identifier la faisabilité technique et opérationnelle.
+- Planifier les ressources, le budget et la gestion des risques.
 
-## 3. Design
-- Design system architecture and database schema.
-- Create wireframes and mockups for the user interface.
-- Plan for security, scalability, and performance.
+## 3. Conception
+- Concevoir l'architecture du système et le schéma de la base de données.
+- Créer des wireframes et des maquettes pour l'interface utilisateur.
+- Planifier la sécurité, l'évolutivité et les performances.
 
-## 4. Development
-- Set up Django project and create application structure.
-- Develop models, views, and templates.
-- Implement business logic and user authentication.
-- Write unit tests and integration tests.
+## 4. Développement
+- Configurer le projet Django et créer la structure de l'application.
+- Développer les modèles, les vues et les templates.
+- Implémenter la logique métier et l'authentification des utilisateurs.
+- Écrire des tests unitaires et des tests d'intégration.
 
-## 5. Testing
-- Perform functional, integration, and system testing.
-- Conduct user acceptance testing (UAT).
-- Identify and fix bugs and issues.
+## 5. Tests
+- Effectuer des tests fonctionnels, d'intégration et système.
+- Réaliser des tests d'acceptation utilisateur (UAT).
+- Identifier et corriger les bugs et les problèmes.
 
-## 6. Deployment
-- Containerize the Django application using Docker.
-- Set up Kubernetes cluster and configure deployment scripts.
-- Deploy the application to the Kubernetes cluster.
-- Monitor application performance and scalability.
+## 6. Déploiement
+- Conteneuriser l'application Django en utilisant Docker.
+- Configurer le cluster Kubernetes et les scripts de déploiement.
+- Déployer l'application sur le cluster Kubernetes.
+- Surveiller les performances et l'évolutivité de l'application.
 
 ## 7. Maintenance
-- Monitor application for issues and performance.
-- Provide regular updates and patches.
-- Handle user feedback and make necessary improvements.
-- Plan for future enhancements and scalability.
+- Surveiller l'application pour les problèmes et les performances.
+- Fournir des mises à jour et des correctifs réguliers.
+- Gérer les retours des utilisateurs et apporter les améliorations nécessaires.
+- Planifier les futures améliorations et l'évolutivité.
 
-## Tools and Technologies
-- **Django**: Web framework for developing the application.
-- **Docker**: Containerization tool for packaging the application.
-- **Kubernetes**: Orchestration tool for deploying and managing containers.
-- **PostgreSQL**: Database for storing application data.
-- **Git**: Version control system for source code management.
-- **CI/CD**: Continuous Integration and Continuous Deployment tools (e.g., Jenkins, GitHub Actions).
+## Outils et technologies
+- **Django** : Framework web pour développer l'application.
+- **Docker** : Outil de conteneurisation pour empaqueter l'application.
+- **Kubernetes** : Outil d'orchestration pour déployer et gérer les conteneurs.
+- **PostgreSQL** : Base de données pour stocker les données de l'application.
+- **Git** : Système de contrôle de version pour la gestion du code source.
+- **CI/CD** : Outils d'intégration et de déploiement continus (par exemple, Jenkins, GitHub Actions).

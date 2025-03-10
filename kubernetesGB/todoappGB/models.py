@@ -7,13 +7,14 @@ class TodoItem(models.Model):
   completed = models.BooleanField(default=False)
   created_at = models.DateTimeField(auto_now_add=True)
   updated_at = models.DateTimeField(auto_now=True)
+  GroupItem = models.ForeignKey('ItemGroup', on_delete=models.CASCADE, blank=True, null=True)
+  # priority = 
 
   def __str__(self):
     return self.title
   
-class ItemGroup(models.Model):
+class GroupItem(models.Model):
   name = models.CharField(max_length=200)
-  items = models.ManyToManyField(TodoItem, blank=True)
 
   def __str__(self):
     return self.name

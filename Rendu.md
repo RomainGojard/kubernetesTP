@@ -35,3 +35,4 @@
 - Identifier la faisabilité technique et les risques potentiels.
   - Faisabilité technique = à voir après cours
   - Risques = sécurité, performances, UX
+  

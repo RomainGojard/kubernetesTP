@@ -3,6 +3,7 @@
 ## 1. Planification
 - Définir les features et les besoin auquel doit répondre le projet.
 - Identifier les exigences des différentes features.
+- Identifier une ou plusieurs features aditionnelles intéréssantes
 - Créer un plan de projet.
 
 ## 2. Analyse
@@ -25,16 +26,7 @@
 - Identifier et corriger les bugs et les problèmes.
 
 ## 6. Déploiement
-- Conteneuriser l'application Django en utilisant Docker.
-- Configurer le cluster Kubernetes et les scripts de déploiement.
-- Déployer l'application sur le cluster Kubernetes.
-- Surveiller les performances et l'évolutivité de l'application.
-
-## 7. Maintenance
-- Surveiller l'application pour les problèmes et les performances.
-- Fournir des mises à jour et des correctifs réguliers.
-- Gérer les retours des utilisateurs et apporter les améliorations nécessaires.
-- Planifier les futures améliorations et l'évolutivité.
+- Conteneuriser / déploiement docker - kubernetes
 
 ## Outils et technologies
 - **Django** : Framework web pour développer l'application.

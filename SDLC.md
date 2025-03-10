@@ -32,6 +32,6 @@
 - **Django** : Framework web pour développer l'application.
 - **Docker** : Outil de conteneurisation pour empaqueter l'application.
 - **Kubernetes** : Outil d'orchestration pour déployer et gérer les conteneurs.
-- **PostgreSQL** : Base de données pour stocker les données de l'application.
+- **SQLite** : Base de données pour stocker les données de l'application.
 - **Git** : Système de contrôle de version pour la gestion du code source.
 - **CI/CD** : Outils d'intégration et de déploiement continus (par exemple, Jenkins, GitHub Actions).

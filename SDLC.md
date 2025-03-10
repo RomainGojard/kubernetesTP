@@ -20,8 +20,8 @@
 - Écrire des tests unitaires et des tests d'intégration.
 
 ## 5. Tests
-- Effectuer des tests fonctionnels, d'intégration et système.
-- Réaliser des tests d'acceptation utilisateur (UAT).
+- Effectuer des tests unitaires d'intégration.
+- Effectuer des tests de performance.
 - Identifier et corriger les bugs et les problèmes.
 
 ## 6. Déploiement

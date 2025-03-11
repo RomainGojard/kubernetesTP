@@ -1,5 +1,5 @@
 # Utiliser l'image officielle Python comme image parente
-FROM python:3.8
+FROM python:3.10.8
 
 # Définir le répertoire de travail dans le conteneur
 WORKDIR /todoappGB

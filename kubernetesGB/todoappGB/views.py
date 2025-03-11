@@ -12,7 +12,7 @@ def register(request):
         if form.is_valid():
             user = form.save()
             login(request, user)
-            return redirect('login')  # Rediriger vers la page de connexion après l'inscription
+            return redirect('login')  # Rediriger vers la page de connexion après l'inscription 
     else:
         form = RegisterForm()
     return render(request, 'register.html', {'form': form})

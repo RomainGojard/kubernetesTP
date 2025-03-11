@@ -3,7 +3,7 @@ from django.contrib.auth import login, authenticate
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.models import User
-from .models import TodoItem, Priority  # Assurez-vous que Priority est importé
+from .models import TodoItem, Priority
 from .forms import RegisterForm, LoginForm
 
 def register(request):
